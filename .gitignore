@@ -1,5 +1,19 @@
-[Bb]in/
-[Oo]bj/
+# Visual Studio
 .vs/
 *.user
 *.suo
+
+# Build
+bin/
+obj/
+
+# Visual Studio Code
+.vscode/
+
+# ASP.NET
+wwwroot/lib/
+
+# User-specific files
+*.user
+*.rsuser
+*.sln.docstates
