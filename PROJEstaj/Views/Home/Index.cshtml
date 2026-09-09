@@ -1,0 +1,33 @@
+﻿@model IEnumerable<PROJEstaj.Models.KisilerTablosu>
+
+<h2>Kişiler Listesi</h2>
+
+<table border="1" width="100%" cellpadding="5" cellspacing="0">
+    <tr bgcolor="#d3d3d3">
+        <th>ID</th>
+        <th>TC</th>
+        <th>Ad</th>
+        <th>Soyad</th>
+        <th>Yaş</th>
+        <th>Cinsiyet</th>
+        <th>İşlemler</th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ID</td>
+            <td>@item.TC</td>
+            <td>@item.Ad</td>
+            <td>@item.Soyad</td>
+            <td>@item.Yas</td>
+            <td>@item.Cinsiyet</td>
+            <td>
+                <a asp-action="Sil" asp-route-id="@item.ID">Sil</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<br />
+
+<a asp-action="Ekle">Yeni Kayıt Ekle</a>

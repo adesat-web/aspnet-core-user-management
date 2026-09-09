@@ -1,0 +1,52 @@
+﻿@model PROJEstaj.Models.KisilerTablosu
+
+<h2>Yeni Kişi Ekle</h2>
+
+<form asp-action="Ekle" method="post">
+    <table>
+        <tr>
+            <td><label>TC:</label></td>
+            <td>
+                <input asp-for="TC" size="15" />
+                <span asp-validation-for="TC"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Ad:</label></td>
+            <td>
+                <input asp-for="Ad" size="20" />
+                <span asp-validation-for="Ad"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Soyad:</label></td>
+            <td>
+                <input asp-for="Soyad" size="20" />
+                <span asp-validation-for="Soyad"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Yaş:</label></td>
+            <td>
+                <input asp-for="Yas" type="number" size="5" />
+                <span asp-validation-for="Yas"></span>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Cinsiyet:</label></td>
+            <td>
+                <select asp-for="Cinsiyet">
+                    <option value="">Seçiniz</option>
+                    <option value="Kadın">Kadın</option>
+                    <option value="Erkek">Erkek</option>
+                </select>
+                <span asp-validation-for="Cinsiyet"></span>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Kaydet</button>
+            </td>
+        </tr>
+    </table>
+</form>
