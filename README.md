@@ -11,15 +11,15 @@ ASP.NET Core (.NET 8) ve Entity Framework Core (EF Core) kullanılarak geliştir
 
 ## 🛠️ Kullanılan Teknolojiler
 
-*   **Framework:** ASP.NET Core MVC (.NET 8)[cite: 14]
-*   **ORM:** Entity Framework Core (SQL Server Provider)[cite: 14]
-*   **Arayüz:** Bootstrap 5, HTML5, Razor View Engine[cite: 16]
-*   **Veritabanı:** Microsoft SQL Server[cite: 12]
+*   **Framework:** ASP.NET Core MVC (.NET 8)
+*   **ORM:** Entity Framework Core (SQL Server Provider)
+*   **Arayüz:** Bootstrap 5, HTML5, Razor View Engine
+*   **Veritabanı:** Microsoft SQL Server
 
 ## ⚙️ Kurulum ve Çalıştırma
 
 1. Projeyi bilgisayarınıza klonlayın veya indirin.
-2. `appsettings.json` dosyasındaki bağlantı cümlesini (`ConnectionStrings`) kendi SQL Server sunucu adınıza göre güncelleyin[cite: 12]:
+2. `appsettings.json` dosyasındaki bağlantı cümlesini (`ConnectionStrings`) kendi SQL Server sunucu adınıza göre güncelleyin:
    ```json
    "ConnectionStrings": {
      "DefaultConnection": "Server=SUNUCU_ADINIZ;Database=KisiBilgi;Trusted_Connection=True;TrustServerCertificate=True;"
